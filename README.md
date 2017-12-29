@@ -10,3 +10,7 @@ In this repository we supply a minified, unminified, version using Summernote's 
 #### Default Theme
 This is the Default Theme for the summernote-lite Branch
 ![summernote-lite-default](default/summernote-lite-default.png)
+
+#### bs3 Theme
+This is a Bootstrap v3 Theme for the summernote-lite Branch
+![summernote-lite-bs3](bs3/summernote-lite-bs3.png)
