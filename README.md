@@ -1,5 +1,5 @@
-# summernote-themes
-Addon Themes for Summernote WYSIWYG Editor
+### summernote-themes
+Themes for Summernote WYSIWYG Editor
 
 This repository contains a set of themes mainly for Summernote Lite version.
 
