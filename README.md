@@ -1,7 +1,5 @@
 ### summernote-themes
-Themes for Summernote WYSIWYG Editor
-
-This repository contains a set of themes mainly for Summernote Lite version.
+Themes for Summernote WYSIWYG Editor Lite Edition
 
 Most of the themes are easily added by swapping out the CSS File in place of the original supplied by the Summernote team.
 
@@ -12,5 +10,9 @@ To use the themes simply reference the stylesheet in place of Summernote's style
 #### Default Theme
 This is the Default Theme for the summernote-lite Branch
 ![summernote-lite-default](default/summernote-lite-default.png)
+
+#### BS3 Theme
+This Theme is more akin to the Original Summernote based on Bootstrap 3
+![summernote-lite-bs3](bs3/summernote-lite-bs3.png)
 
 More to come...
