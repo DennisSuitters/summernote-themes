@@ -9,14 +9,17 @@ To use the themes simply reference the stylesheet in place of Summernote's style
 
 #### Default Theme
 This is the Default Theme for the summernote-lite Branch
+
 ![summernote-lite-default](default/summernote-lite-default-thumb.png)
 
 #### BS3 Theme
 This Theme is more akin to the Original Summernote based on Bootstrap 3
+
 ![summernote-lite-bs3](bs3/summernote-lite-bs3-thumb.png)
 
 #### Darkly Theme
 This Theme is based on the Bootswatch Darkly Theme based on Bootstrap 4
+
 ![summernote-lite-darkly](darkly/summernote-lite-darkly-thumb.png)
 
 More to come...
