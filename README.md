@@ -15,4 +15,8 @@ This is the Default Theme for the summernote-lite Branch
 This Theme is more akin to the Original Summernote based on Bootstrap 3
 ![summernote-lite-bs3](bs3/summernote-lite-bs3.png)
 
+#### Darkly Theme
+This Theme is based on the Bootswatch Darkly Theme based on Bootstrap 4
+![summernote-lite-darkly](darkly/summernote-lite-darkly.png)
+
 More to come...
