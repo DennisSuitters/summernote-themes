@@ -299,6 +299,19 @@
   box-sizing: border-box
 }
 
+.note-frame {
+  position: relative
+}
+
+.note-frame:after {
+  content: 'Default Theme by Diemen Design';
+  font-size: 10px;
+  color: #999;
+  position: absolute;
+  bottom: -14px;
+  right: 0;
+}
+
 [class^="note-"],
 [class*=" note-"] {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

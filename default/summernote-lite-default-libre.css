@@ -280,6 +280,19 @@
   color: #000
 }
 
+.note-frame {
+  position: relative
+}
+
+.note-frame:after {
+  content: 'Default Libre Theme by Diemen Design';
+  font-size: 10px;
+  color: #999;
+  position: absolute;
+  bottom: -12px;
+  right: 0;
+}
+
 .note-editable p {
   margin: 0 0 10px
 }

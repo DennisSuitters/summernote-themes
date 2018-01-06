@@ -19,6 +19,12 @@ This Theme is more akin to the Original Summernote based on Bootstrap 3.
 
 ![summernote-lite-bs3](bs3/summernote-lite-bs3-thumb.png)
 
+#### Cerulean Theme
+
+This Theme is based on the Bootswatch Cerulean Theme based on Bootstrap 4.
+
+![summernote-lite-cerulean](cerulean/summernote-lite-cerulean-thumb.png)
+
 #### Darkly Theme
 
 This Theme is based on the Bootswatch Darkly Theme based on Bootstrap 4.
