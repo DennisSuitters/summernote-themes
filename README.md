@@ -25,6 +25,12 @@ This Theme is based on the Bootswatch Cerulean Theme based on Bootstrap 4.
 
 ![summernote-lite-cerulean](cerulean/summernote-lite-cerulean-thumb.png)
 
+#### Cosmo Theme
+
+This Theme is based on the Bootswatch Cosmo Theme based on Bootstrap 4.
+
+![summernote-lite-cosmo](cosmo/summernote-lite-cosmo-thumb.png)
+
 #### Darkly Theme
 
 This Theme is based on the Bootswatch Darkly Theme based on Bootstrap 4.
