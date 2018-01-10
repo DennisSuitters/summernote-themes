@@ -290,7 +290,7 @@
 }
 
 .note-frame * {
-  color: #000;
+  color: #fff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -298,15 +298,16 @@
 }
 
 .note-frame {
-  position: relative
+  position: relative;
+  border: 1px solid #1a1a1a !important
 }
 
 .note-frame:after {
-  content: 'BS3 Theme by Diemen Design';
+  content: 'Plex Theme by Diemen Design';
   font-size: 10px;
   color: #999;
   position: absolute;
-  bottom: -14px;
+  bottom: -15px;
   right: 0;
 }
 
@@ -321,7 +322,7 @@
 
 [class^="note-"] a,
 [class*=" note-"] a {
-  color: #337ab7;
+  color: #cc7b19;
   text-decoration: none
 }
 
@@ -329,7 +330,6 @@
 [class*=" note-"] a:hover
 [class^="note-"] a:focus,
 [class*=" note-"] a:focus {
-  color: #23527c;
   text-decoration: underline
 }
 
@@ -358,7 +358,7 @@
 
 .note-toolbar {
   padding: 10px 5px;
-  border-bottom: 1px solid #e2e2e2;
+  border-bottom: 1px solid #000;
   z-index: 500
 }
 
@@ -428,7 +428,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4285743;
-  color: #333;
+  color: #fff;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -439,9 +439,9 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: #fff;
+  background-color: #f9be03;
   background-image: none;
-  border: 1px solid #ccc;
+  border: 1px solid #e0ab03;
   border-radius: 4px;
   outline: 0
 }
@@ -452,20 +452,18 @@ fieldset[disabled] .note-btn:focus,
 .note-btn.disabled.focus,
 .note-btn[disabled].focus,
 fieldset[disabled] .note-btn.focus {
-  background-color: #fff;
-  border-color: #fff
+  color: #fff;
+  background-color: #c79802;
+  border-color: #a37d02
 }
 
 .note-btn:hover,
 .note-btn:focus,
 .note-btn.focus {
-  color: #333;
+  color: #fff;
   text-decoration: none;
-  background-color: #e6e6e6;
-  border: 1px solid #adadad;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  background-color: #c79802;
+  border: 1px solid #a37d02;
   outline: 0
 }
 
@@ -550,7 +548,7 @@ button.close {
   float: right;
   font-size: 21px;
   line-height: 1;
-  color: #000;
+  color: #fff;
   opacity: .2
 }
 
@@ -575,13 +573,14 @@ button.close {
   display: none;
   float: left;
   min-width: 100px;
-  padding: 5px;
+  padding: 0;
   text-align: left;
-  background: #fff;
-  border: 1px solid #e2e2e2;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .06);
-     -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .06);
-          box-shadow: 0 1px 1px rgba(0, 0, 0, .06);
+  background: #1a1a1a;
+  border: 1px solid #000;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+     -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
   background-clip: padding-box
 }
 
@@ -590,11 +589,14 @@ button.close {
 }
 
 .note-dropdown-item {
+  color: #fff !important;
   display: block
 }
 
 .note-dropdown-item:hover {
-  background-color: #ebebeb
+  color: #fff;
+  background-color: #000;
+  text-decoration: none
 }
 
 a.note-dropdown-item,
@@ -613,6 +615,7 @@ a.note-dropdown-item:hover {
   z-index: 1050;
   display: none;
   overflow: hidden;
+  color: #fff;
   -webkit-opacity: 1;
   -khtml-opacity: 1;
   -moz-opacity: 1;
@@ -628,11 +631,13 @@ a.note-dropdown-item:hover {
 .note-modal-content {
   position: relative;
   width: auto;
-  background: #fff;
-  border: 1px solid #999;
+  background: #000;
+  border: 1px solid #000;
   border: 1px solid rgba(0, 0, 0, .2);
   outline: 0;
   border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   -webkit-background-clip: border-box;
           background-clip: border-box
 }
@@ -640,10 +645,11 @@ a.note-dropdown-item:hover {
 .note-modal-header {
   min-height: 16.42857143px;
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5
+  border-bottom: 1px solid #1f1f1f
 }
 
 .note-modal-header .close {
+  color: #fff;
   margin-top: -2px
 }
 
@@ -662,7 +668,7 @@ a.note-dropdown-item:hover {
 .note-modal-footer {
   padding: 15px;
   text-align: center;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #1f1f1f;
   height:40px
 }
 
@@ -674,7 +680,7 @@ a.note-dropdown-item:hover {
   margin: 0;
   font-size: 18px;
   line-height: 1.4;
-  color: #000;
+  color: #fff;
   text-align: left
 }
 
@@ -725,28 +731,51 @@ a.note-dropdown-item:hover {
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: 700;
-  color: #42515f
+  color: #fff
 }
 
 .note-input {
   display: block;
   width: 100%;
-  padding: 6px 4px;
-  font-size: 14px;
-  background: #fff;
-  border: 1px solid #ededef;
+  height: 36px;
+  padding: 8px 14px;
+  font-size: 13px;
+  color: #858b92;
+  background-color: rgba(60, 67, 73, 0.2);
+  border: 2px solid #333;
   outline: 0;
+  border-radius: 4px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
-  box-sizing: border-box
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 0 0 #000 !important;
+          box-shadow: 0 0 0 #000 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 
-.note-input::-webkit-input-placeholder,
-.note-input:-moz-placeholder,
-.note-input::-moz-placeholder,
+.note-input:focus {
+  border-color: #f9be03;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(249, 190, 3, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(249, 190, 3, 0.6);
+}
+
+.note-input::-moz-placeholder {
+  color: #b7bac9;
+  opacity: 1;
+}
+
 .note-input:-ms-input-placeholder {
-  color: #eee
+  color: #b7bac9;
+}
+
+.note-input::-webkit-input-placeholder {
+  color: #b7bac9;
 }
 
 .note-tooltip {
@@ -860,12 +889,34 @@ a.note-dropdown-item:hover {
   display: block;
   display: none;
   font-size: 13px;
-  background: #fff;
-  border: 1px solid rgba(0, 0, 0, .2);
-  border: 1px solid #ccc;
+  background: #1a1a1a;
+  border: 1px solid #1a1a1a;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
   border-radius: 6px
+}
+
+
+.note-dropdown-menu .note-btn,
+.note-popover .note-btn {
+  color: #fff;
+  background: #333;
+  border-color: #333 !important
+}
+
+.note-dropdown-menu .note-btn:hover,
+.note-dropdown-menu .note-btn:focus,
+.note-dropdown-menu .note-btn.focus,
+.note-dropdown-menu .note-btn:active,
+.note-dropdown-menu .note-btn.active,
+.note-popover .note-btn:hover,
+.note-popover .note-btn:focus,
+.note-popover .note-btn.focus,
+.note-popover .note-btn:active,
+.note-popover .note-btn.active {
+  color: #fff;
+  background-color: #222;
+  border-color: #222 !important
 }
 
 .note-popover.in {
@@ -896,8 +947,7 @@ a.note-dropdown-item:hover {
   top: -11px;
   left: 50%;
   margin-left: -10px;
-  border-bottom-color: #999;
-  border-bottom-color: rgba(0, 0, 0, .25);
+  border-bottom-color: #1a1a1a;
   border-top-width: 0
 }
 
@@ -905,7 +955,7 @@ a.note-dropdown-item:hover {
   content: '';
   top: 1px;
   margin-left: -10px;
-  border-bottom-color: #fff;
+  border-bottom-color: #1a1a1a;
   border-top-width: 0
 }
 
@@ -913,8 +963,7 @@ a.note-dropdown-item:hover {
   bottom: -11px;
   left: 50%;
   margin-left: -10px;
-  border-top-color: #999;
-  border-top-color: rgba(0, 0, 0, .25);
+  border-top-color: #1a1a1a;
   border-bottom-width: 0
 }
 
@@ -922,7 +971,7 @@ a.note-dropdown-item:hover {
   content: '';
   bottom: 1px;
   margin-left: -10px;
-  border-top-color: #fff;
+  border-top-color: #1a1a1a;
   border-bottom-width: 0
 }
 
@@ -930,8 +979,7 @@ a.note-dropdown-item:hover {
   top: 50%;
   left: -11px;
   margin-top: -10px;
-  border-right-color: #999;
-  border-right-color: rgba(0, 0, 0, .25);
+  border-right-color: #1a1a1a;
   border-left-width: 0
 }
 
@@ -939,7 +987,7 @@ a.note-dropdown-item:hover {
   content: '';
   left: 1px;
   margin-top: -10px;
-  border-right-color: #fff;
+  border-right-color: #1a1a1a;
   border-left-width: 0
 }
 
@@ -947,8 +995,7 @@ a.note-dropdown-item:hover {
   top: 50%;
   right: -11px;
   margin-top: -10px;
-  border-left-color: #999;
-  border-left-color: rgba(0, 0, 0, .25);
+  border-left-color: #1a1a1a;
   border-right-width: 0
 }
 
@@ -956,7 +1003,7 @@ a.note-dropdown-item:hover {
   content: '';
   right: 1px;
   margin-top: -10px;
-  border-left-color: #fff;
+  border-left-color: #1a1a1a;
   border-right-width: 0
 }
 
@@ -980,9 +1027,9 @@ a.note-dropdown-item:hover {
   min-width: 100px;
   min-height: 30px;
   padding: 3px 8px;
-  color: #000;
+  color: #fff;
   text-align: center;
-  background-color: #fff
+  background-color: #1a1a1a
 }
 
 .note-editor {
@@ -1047,7 +1094,7 @@ a.note-dropdown-item:hover {
 }
 
 .note-editor.note-frame {
-  border: 1px solid #ddd;
+  border: 1px solid #000;
   border-radius: 3px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
      -mox-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
@@ -1071,7 +1118,7 @@ a.note-dropdown-item:hover {
   overflow: auto;
   color: #000;
   word-wrap: break-word;
-  background-color: #fff
+  background-color: #222
 }
 
 .note-editor.note-frame .note-editing-area .note-editable[contenteditable="false"] {
@@ -1108,7 +1155,7 @@ a.note-dropdown-item:hover {
 }
 
 .note-editor.note-frame.fullscreen .note-editable {
-  background-color: #fff
+  background-color: #000
 }
 
 .note-editor.note-frame.fullscreen .note-resizebar {
@@ -1122,9 +1169,9 @@ a.note-dropdown-item:hover {
   line-height: 1.42857143;
   height: 20px;
   margin-bottom: 0;
-  color: #000;
+  color: #fff;
   border: 0;
-  border-top: 1px solid #e2e2e2
+  border-top: 1px solid #000
 }
 
 .note-status-output:empty {
@@ -1137,35 +1184,37 @@ a.note-dropdown-item:hover {
 }
 
 .note-status-output .text-muted {
-  color: #777
+  color: #333
 }
 
 .note-status-output .text-primary {
-  color: #286090
+  color: #f9be03
 }
 
 .note-status-output .text-success {
-  color: #3c763d
+  color: #7bc074
 }
 
 .note-status-output .text-info {
-  color: #31708f
+  color: #00afd1
 }
 
 .note-status-output .text-warning {
-  color: #8a6d3b
+  color: #ffc61d
 }
 
 .note-status-output .text-danger {
-  color:#a94442
+  color: #e13d45
 }
 
 .note-status-output .alert {
   margin: -7px 0 0 0;
   padding: 7px 10px 2px 10px;
   border-radius: 0;
-  color: #000;
-  background-color: #f5f5f5;
+  color: #fff;
+  background-color: #000;
+  -webkit-transition: all .5s;
+  transition: all .5s
 }
 
 .note-status-output .alert .note-icon{
@@ -1173,28 +1222,27 @@ a.note-dropdown-item:hover {
 }
 
 .note-status-output .alert-success {
-  color: #3c763d !important;
-  background-color: #dff0d8 !important;
+  color: #fff !important;
+  background-color: #78b863 !important;
 }
 
 .note-status-output .alert-info {
-  color: #31708f !important;
-  background-color: #d9edf7 !important;
+  color: #fff !important;
+  background-color: #00afd1 !important;
 }
 
 .note-status-output .alert-warning {
-  color: #8a6d3b !important;
-  background-color: #fcf8e3 !important;
+  color: #fff !important;
+  background-color: #ff9603 !important;
 }
 
 .note-status-output .alert-danger {
-  color: #a94442 !important;
-  background-color: #f2dede !important;
+  color: #fff !important;
+  background-color: #e13d45 !important;
 }
 
-
 .note-editor.note-frame .note-statusbar {
-  background-color: #f5f5f5;
+  background-color: #111;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px
 }
@@ -1209,7 +1257,7 @@ a.note-dropdown-item:hover {
 .note-editor.note-frame .note-statusbar .note-resizebar .note-icon-bar {
   width: 20px;
   margin: 1px auto;
-  border-top: 1px solid #a9a9a9
+  border-top: 1px solid #fff
 }
 
 .note-editor.note-frame .note-placeholder {
@@ -1237,11 +1285,12 @@ a.note-dropdown-item:hover {
 .note-toolbar {
   padding: 0 0 5px 5px;
   margin: 0;
-  background-color: #fff
+  background-color: #111;
+  border-color: #1111 !important
 }
-.note-toolbar {
-  background-color: #f5f5f5;
-  border-color: #ddd
+
+.note-popover .note-popover-content {
+  background-color: #1a1a1a
 }
 
 .note-popover .note-popover-content > .note-btn-group,
@@ -1341,11 +1390,12 @@ a.note-dropdown-item:hover {
   margin: 2px 7px;
   font-size: 12px;
   text-align: center;
-  border-bottom: 1px solid #eee
+  border-bottom: 1px solid #676c73
 }
 
 .note-popover .note-popover-content .note-color .note-dropdown-menu .note-palette .note-color-reset,
 .note-toolbar .note-color .note-dropdown-menu .note-palette .note-color-reset {
+  color: #858b92;
   width: 100%;
   margin: 3px;
   padding: 2px 3px;
@@ -1354,7 +1404,7 @@ a.note-dropdown-item:hover {
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
-  background-color: #fff
+  background-color: #1a1a1a
 }
 
 .note-popover .note-popover-content .note-color .note-dropdown-menu .note-palette .note-color-row,
@@ -1364,7 +1414,8 @@ a.note-dropdown-item:hover {
 
 .note-popover .note-popover-content .note-color .note-dropdown-menu .note-palette .note-color-reset:hover,
 .note-toolbar .note-color .note-dropdown-menu .note-palette .note-color-reset:hover {
-  background: #eee
+  color: #fff;
+  background: #000
 }
 
 .note-popover .note-popover-content .note-para .note-dropdown-menu,
@@ -1404,7 +1455,7 @@ a.note-dropdown-item:hover {
 
 .note-popover .note-popover-content .note-dropdown-menu.note-check .note-dropdown-item i,
 .note-toolbar .note-dropdown-menu.note-check .note-dropdown-item i {
-  color: #000;
+  color: #fff;
   visibility: hidden
 }
 
@@ -1434,7 +1485,7 @@ a.note-dropdown-item:hover {
   height: 20px;
   padding: 0;
   margin: 0;
-  border: 1px solid #fff
+  border: 1px solid #000
 }
 
 .note-popover .note-popover-content .note-color-palette div .note-color-btn:hover,
