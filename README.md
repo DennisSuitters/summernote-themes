@@ -41,6 +41,6 @@ This Theme is based on the Bootswatch Darkly Theme based on Bootstrap 4.
 
 This Theme is based on the Theme used by Plex based on Bootstrap 3.
 
-![summernote-lite-plex](plex/summernote-plex-thumb.png)
+![summernote-lite-plex](plex/summernote-lite-plex-thumb.png)
 
 More to come...
