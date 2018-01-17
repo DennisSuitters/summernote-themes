@@ -31,6 +31,12 @@ This Theme is based on the Bootswatch Cosmo Theme based on Bootstrap 4.
 
 ![summernote-lite-cosmo](cosmo/summernote-lite-cosmo-thumb.png)
 
+#### Cyborg Theme
+
+This Theme is based on the Bootswatch Cyborg Theme based on Bootstrap 4.
+
+![summernote-lite-cyborg](cyborg/summernote-lite-cyborg-thumb.png)
+
 #### Darkly Theme
 
 This Theme is based on the Bootswatch Darkly Theme based on Bootstrap 4.
