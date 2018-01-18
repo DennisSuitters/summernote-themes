@@ -53,6 +53,6 @@ This Theme is based on the Theme used by Plex based on Bootstrap 3.
 
 This Theme is based on the Theme used by Github.
 
-![summernote-lite-primer](plex/summernote-lite-primer-thumb.png)
+![summernote-lite-primer](primer/summernote-lite-primer-thumb.png)
 
 More to come...
