@@ -285,7 +285,7 @@
 }
 
 .note-frame:after {
-  content: 'Cosmo Libre Colour Theme by Diemen Design';
+  content: 'Flatly Libre Colour Theme by Diemen Design';
   font-size: 10px;
   color: #999;
   position: absolute;
@@ -304,7 +304,7 @@
 
 [class^="note-"] a,
 [class*=" note-"] a {
-  color: #337ab7;
+  color: #18bc9c !important;
   text-decoration: none
 }
 
@@ -312,7 +312,7 @@
 [class*=" note-"] a:hover
 [class^="note-"] a:focus,
 [class*=" note-"] a:focus {
-  color: #23527c;
+  color: #0f7864 !important;
   text-decoration: underline
 }
 
@@ -321,18 +321,6 @@
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px
-}
-
-.note-editable * {
-  color: #000 !important;
-}
-
-.note-editable a{
-  color: #2780e3 !important
-}
-
-.note-editable a:hover {
-  color: #165ba8 !important
 }
 
 .note-editable p {
@@ -353,7 +341,7 @@
 
 .note-toolbar {
   padding: 10px 5px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid #e2e2e2;
   z-index: 500
 }
 
@@ -434,15 +422,11 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: #2780e3;
+  background-color: #2c3e50;
   background-image: none;
-  border: 1px solid #2780e3;
+  border: 1px solid #2c3e50;
   border-radius: 0;
-  outline: 0;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  outline: 0
 }
 
 .note-btn.disabled:focus,
@@ -451,9 +435,8 @@ fieldset[disabled] .note-btn:focus,
 .note-btn.disabled.focus,
 .note-btn[disabled].focus,
 fieldset[disabled] .note-btn.focus {
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(39, 128, 227, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(39, 128, 227, 0.25);
+  background-color: #2c3e50;
+  border-color: #2c3e50
 }
 
 .note-btn:hover,
@@ -461,8 +444,12 @@ fieldset[disabled] .note-btn.focus {
 .note-btn.focus {
   color: #fff;
   text-decoration: none;
-  background-color: #1a6dca;
-  border: 1px solid #1967be
+  background-color: #1e2b37;
+  border: 1px solid #1a252f;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  outline: 0
 }
 
 .note-btn:active,
@@ -488,35 +475,33 @@ fieldset[disabled] .note-btn {
 
 .note-btn-primary {
   color: #fff;
-  background: #337ab7;
-  border-color: #2e6da4
+  background-color: #18bc9c;
+  border-color: #18bc9c;
+  border-radius: 0;
 }
 
 .note-btn-primary:focus,
 .note-btn-primary.focus {
   color: #fff;
-  text-decoration: none;
-  background-color: #286090;
-  border: 1px solid #122b40;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  border-radius: 1px
+  background-color: #18bc9c;
+  border-color: #18bc9c;
+  border-radius: 0;
 }
 .note-btn-primary:hover{
   color: #fff;
   text-decoration: none;
-  background-color: #286090;
-  border: 1px solid #204d74;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  border-radius: 1px
+  background-color: #149a80;
+  border: 1px solid #128f76;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0
 }
 
 .note-btn-large {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
-  border-radius: 6px
+  border-radius: 0
 }
 
 .note-btn-block {
@@ -587,19 +572,25 @@ button.close {
 
 .note-dropdown-item {
   display: block;
-  color: #212529;
-  background-color: transparent;
+  color: #7b8a8b !important;
+  background-color: #fff;
 }
 
 .note-dropdown-item:hover {
-  color: 16181b;
-  background-color: #f8f9fa
+  color: #fff !important;
+  background-color: #1e2b37 !important;
 }
 
-a.note-dropdown-item,
+a.note-dropdown-item {
+  margin: 2px 0;
+  color: #7b8a8b !important;
+  background-color: #fff;
+}
+
 a.note-dropdown-item:hover {
-  margin:2px 0;
-  color: #212529;
+  margin: 2px 0;
+  color: #fff !important;
+  background-color: #1e2b37 !important;
   text-decoration: none
 }
 
@@ -628,16 +619,20 @@ a.note-dropdown-item:hover {
   position: relative;
   width: auto;
   background: #fff;
+  border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, .2);
   outline: 0;
-  border-radius: 0;
+  border-radius: 6px;
   -webkit-background-clip: border-box;
           background-clip: border-box
 }
 
 .note-modal-header {
-  padding: 1rem;
-  border-bottom: 1px solid #e9ecef
+  min-height: 16.42857143px;
+  padding: 15px;
+  border-bottom: 1px solid #ecf0f1;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
 }
 
 .note-modal-header .close {
@@ -647,20 +642,20 @@ a.note-dropdown-item:hover {
 .note-modal-title {
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.42857143;
   margin: 0;
 }
 
 .note-modal-body {
   position: relative;
-  padding: 1rem
+  padding: 15px
 }
 
 .note-modal-footer {
-  padding: 1rem;
+  padding: 15px;
   text-align: center;
-  border-top: 1px solid #e9ecef;
-  height:40px
+  border-top: 1px solid #ecf0f1;
+  min-height:40px
 }
 
 .note-modal-footer .note-btn {
@@ -718,22 +713,22 @@ a.note-dropdown-item:hover {
 }
 
 .note-form-label {
-  padding-top: calc(0.375rem + 1px);
-  padding-bottom: calc(0.375rem + 1px);
-  margin-bottom: 0;
-  font-size: inherit;
-  line-height: 1.5;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #42515f
 }
 
 .note-input {
   display: block;
   width: 100%;
-  padding: 0.375rem 0.75rem;
-  font-size: 0.9375rem;
-  color: #495057;
+  padding: 6px 4px;
+  font-size: 14px;
+  color: #7b8a8b;
   background: #fff;
   border: 1px solid #ced4da;
-  border-radius: 0;
+  border-radius: 0.25rem;
   outline: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -746,32 +741,32 @@ a.note-dropdown-item:hover {
 }
 
 .note-input:focus {
-  color: #495057;
+  color: #7b8a8b;
   background-color: #fff;
-  border-color: #98c2f2;
+  border-color: #597ea2;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(39, 128, 227, 0.25);
-          box-shaodw: 0 0 0 0.2rem rgba(39, 128, 227, 0.25);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25);
 }
 
 .note-input::-webkit-input-placeholder {
-  color: #868e96;
-  opacity: 1;
+  color: #95a5a6;
+  opacity: 1
 }
 
 .note-input:-moz-placeholder {
-  color: #868e96;
-  opacity: 1;
+  color: #95a5a6;
+  opacity: 1
 }
 
 .note-input::-moz-placeholder {
-  color: #868e96;
-  opacity: 1;
+  color: #95a5a6;
+  opacity: 1
 }
 
 .note-input:-ms-input-placeholder {
-  color: #868e96;
-  opacity: 1;
+  color: #95a5a6;
+  opacity: 1
 }
 
 .note-tooltip {
@@ -1041,7 +1036,6 @@ a.note-dropdown-item:hover {
 }
 
 .note-editor .note-editing-area {
-  color: #000 !important;
   position: relative
 }
 
@@ -1095,7 +1089,7 @@ a.note-dropdown-item:hover {
 .note-editor.note-frame .note-editing-area .note-editable {
   padding: 10px;
   overflow: auto;
-  color: #000 !important;
+  color: #000;
   word-wrap: break-word;
   background-color: #fff
 }
@@ -1167,31 +1161,31 @@ a.note-dropdown-item:hover {
 }
 
 .note-status-output .text-primary {
-  color: #2780e3 !important
+  color: #2c3e50 !important
 }
 
 .note-status-output .text-success {
-  color: #2f8912 !important
+  color: #18bc9c !important
 }
 
 .note-status-output .text-info {
-  color: #9954bb !important
+  color: #3498db !important
 }
 
 .note-status-output .text-warning {
-  color: #ff7518 !important
+  color: #f39c12 !important
 }
 
 .note-status-output .text-danger {
-  color: #cc002e !important
+  color:#e74c3c !important
 }
 
 .note-status-output .alert {
   margin: -7px 0 0 0;
   padding: 7px 10px 2px 10px;
   border-radius: 0;
-  color: #000;
-  background-color: #f5f5f5;
+  color: #fff;
+  background-color: #2c3e50;
 }
 
 .note-status-output .alert .note-icon{
@@ -1199,29 +1193,26 @@ a.note-dropdown-item:hover {
 }
 
 .note-status-output .alert-success {
-  color: #215f0c !important;
-  background-color: #d9f0d1 !important;
+  background-color: #18bc9c !important;
 }
 
 .note-status-output .alert-info {
-  color: #502c61 !important;
-  background-color: #ebddf1 !important;
+  background-color: #3498db !important;
 }
 
 .note-status-output .alert-warning {
-  color: #853d0c !important;
-  background-color: #ffe3d1 !important;
+  background-color: #f39c12 !important;
 }
 
 .note-status-output .alert-danger {
-  color: #85001e !important;
-  background-color: #ffccd7 !important;
+  background-color: #e74c3c !important;
 }
 
+
 .note-editor.note-frame .note-statusbar {
-  background-color: #2780e3;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px
+  background-color: #2c3e50;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0
 }
 
 .note-editor.note-frame .note-statusbar .note-resizebar {
@@ -1265,21 +1256,10 @@ a.note-dropdown-item:hover {
   background-color: #fff
 }
 .note-toolbar {
-  background-color: #2780e3;
-  border-color: rgba(0, 0, 0, 0.125)
+  background-color: #2c3e50;
+  border-color: #2c3e50
 }
 
-.note-dropdown-menu .note-btn,
-.note-popover .note-btn {
-  background-color: 373a3c;
-  border-color: 373a3c;
-}
-
-.note-dropdown-menu .note-btn,
-.note-popover .note-btn:hover {
-  background-color: 252728;
-  border-color: #1f2021;
-}
 .note-popover .note-popover-content > .note-btn-group,
 .note-toolbar > .note-btn-group {
   margin-top: 5px;
@@ -1377,7 +1357,7 @@ a.note-dropdown-item:hover {
   margin: 2px 7px;
   font-size: 12px;
   text-align: center;
-  border-bottom: 1px solid #eee
+  border-bottom: 1px solid #ddd
 }
 
 .note-popover .note-popover-content .note-color .note-dropdown-menu .note-palette .note-color-reset,
@@ -1387,10 +1367,12 @@ a.note-dropdown-item:hover {
   padding: 2px 3px;
   cursor: pointer;
   border: 0;
-  -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
-          border-radius: 5px;
-  background-color: #fff
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  color:#fff;
+  background-color: #2c3e50;
+  border-color: #2c3e50;
 }
 
 .note-popover .note-popover-content .note-color .note-dropdown-menu .note-palette .note-color-row,
@@ -1400,7 +1382,9 @@ a.note-dropdown-item:hover {
 
 .note-popover .note-popover-content .note-color .note-dropdown-menu .note-palette .note-color-reset:hover,
 .note-toolbar .note-color .note-dropdown-menu .note-palette .note-color-reset:hover {
-  background: #eee
+  color: #fff;
+  background-color: #1e2b37;
+  border-color: #1a252f;
 }
 
 .note-popover .note-popover-content .note-para .note-dropdown-menu,
@@ -1440,8 +1424,13 @@ a.note-dropdown-item:hover {
 
 .note-popover .note-popover-content .note-dropdown-menu.note-check .note-dropdown-item i,
 .note-toolbar .note-dropdown-menu.note-check .note-dropdown-item i {
-  color: #000;
+  color: #7b8a8b;
   visibility: hidden
+}
+
+.note-popover .note-popover-content .note-dropdown-menu.note-check .note-dropdown-item i:hover,
+.note-toolbar .note-dropdown-menu.note-check .note-dropdown-item i:hover {
+  color: #fff;
 }
 
 .note-popover .note-popover-content .note-dropdown-menu.note-check .note-dropdown-item.checked i,
